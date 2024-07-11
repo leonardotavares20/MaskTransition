@@ -1,3 +1,3 @@
 # Mask Transition with Svelte, GSAP, CSS Mask, and Lenis for scroll
 
-This is a demonstration of a transition that I was inspired by, in Olivier Larose's demo, but I did this demo myself :)
+This is a demo of a transition that inspired me, in Olivier Larose's demo, but I made this demo myself :)
