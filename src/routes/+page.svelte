@@ -107,8 +107,8 @@
     height: 100vh;
     transform: rotate(360deg);
     background-color: black;
-    -webkit-mask-image: url(mask.svg);
-    mask-image: url(mask.svg);
+    -webkit-mask-image: url(/masks/mask.svg);
+    mask-image: url(/masks/mask.svg);
     -webkit-mask-size: 50%;
     mask-size: 0%;
     -webkit-mask-position: center;
