@@ -11,9 +11,7 @@
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
-    masks.forEach((mask) => {
-      mask.maskStart();
-    });
+    masks.forEach((mask) => mask.maskStart());
 
     createSmoothScroll();
     createTimelineText();
