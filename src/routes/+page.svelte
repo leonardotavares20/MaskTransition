@@ -48,10 +48,6 @@
 <footer class="footer">End :)</footer>
 
 <style>
-  :global(html) {
-    scroll-behavior: smooth;
-  }
-
   .header {
     padding: 30px;
   }
@@ -85,7 +81,7 @@
 
   .masks-section {
     position: relative;
-    height: 600vh;
+    height: 400vh;
   }
 
   .masks-section__container-masks {
@@ -107,8 +103,8 @@
     background-color: black;
     -webkit-mask-image: url(/masks/mask.svg);
     mask-image: url(/masks/mask.svg);
-    -webkit-mask-size: 50%;
-    mask-size: 0%;
+    -webkit-mask-size: 0px;
+    mask-size: 0px;
     -webkit-mask-position: center;
     mask-position: center;
     -webkit-mask-repeat: no-repeat;
