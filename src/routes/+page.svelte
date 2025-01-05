@@ -3,13 +3,10 @@
   import gsap from "gsap";
   import TextPlugin from "gsap/dist/TextPlugin";
   import ScrollTrigger from "gsap/dist/ScrollTrigger";
-  import { onMount, onDestroy } from "svelte";
+  import { onMount } from "svelte";
   import { createTimelineText } from "$lib/timelines/textTimeline";
   import { createSmoothScroll } from "$lib/scroll/smoothScroll";
   import { masks } from "$lib/masks/masks";
-  import { viewport } from "$lib/stores/viewport";
-
-  const unsubscribe = viewport.subscribe(() => {});
 
   onMount(() => {
     gsap.registerPlugin(TextPlugin, ScrollTrigger);
@@ -18,10 +15,6 @@
 
     createSmoothScroll();
     createTimelineText();
-  });
-
-  onDestroy(() => {
-    unsubscribe();
   });
 </script>
 
@@ -95,6 +88,7 @@
     -webkit-position: sticky;
     position: sticky;
     height: 100vh;
+    width: 100vw;
     top: 0;
   }
 
