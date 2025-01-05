@@ -1,4 +1,4 @@
-import { Mask } from "./maskTransitions";
+import { Mask } from "./Mask";
 
 export const masks = [
   new Mask(
